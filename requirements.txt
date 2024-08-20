@@ -3,7 +3,6 @@ Union
 python-dotenv
 clerk-sdk-python
 sqlalchemy 
-psycopg[async]
-svix
+psycopg2-binary
 uvicorn
 aiofiles
