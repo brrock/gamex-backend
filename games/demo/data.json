@@ -1,0 +1,8 @@
+{
+    "title": "Demo",
+    "description": "lorem ipsum",
+    "tags": "Test, demo",
+    "mainImage": "images/waves.jpg",
+    "secondaryImage": "https://picsum.photos/200",
+    "published": true
+}

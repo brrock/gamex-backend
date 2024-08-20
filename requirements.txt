@@ -1,0 +1,9 @@
+fastapi[standard]
+Union
+python-dotenv
+clerk-sdk-python
+sqlalchemy 
+psycopg[async]
+svix
+uvicorn
+aiofiles
