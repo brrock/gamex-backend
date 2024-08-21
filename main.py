@@ -106,17 +106,6 @@ async def get_json_file(dir_name: str):
     else:
         raise HTTPException(status_code=404, detail="File not found")
 
-# Endpoint to get the main image URL for a specific directory
-@app.get("/games/{dir_name}/mainImage")
-async def get_main_image(dir_name: str):
-    image_url = f"https://example.com/images/{dir_name}/main_image.png"  # Use a web URL
-    return {"image_url": image_url}
-
-# Endpoint to get the secondary image URL for a specific directory
-@app.get("/games/{dir_name}/secondaryImage")
-async def get_secondary_image(dir_name: str):
-    image_url = f"https://example.com/images/{dir_name}/secondary_image.png"  # Use a web URL
-    return {"image_url": image_url}
 
 # Endpoint to get user data by user_id
 @app.get("/user/{user_id}/data")
@@ -131,7 +120,3 @@ async def get_user_data(user_id: str, db: Session = Depends(get_db)):
         }
     else:
         raise HTTPException(status_code=404, detail="User not found")
-
-if __name__ == '__main__':
-    import uvicorn
-    uvicorn.run(app)

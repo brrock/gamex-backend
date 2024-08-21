@@ -2,7 +2,7 @@
     "title": "Demo",
     "description": "lorem ipsum",
     "tags": "Test, demo",
-    "mainImage": "images/waves.jpg",
+    "mainImage": "https://picsum.photos/200",
     "secondaryImage": "https://picsum.photos/200",
     "published": true
 }
